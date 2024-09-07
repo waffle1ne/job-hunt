@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #2b2b2b;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.filter-section {
+  width: 300px;
+  padding: 20px;
+  background-color: #d6d6d6;
+  border-right: 1px solid #a9a9a9;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.job-list-section {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h2 {
+  color: #3c3c3c;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.job-list {
+  list-style-type: none;
+}
+
+.job-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+  color: #7f7f7f;
+}
+
+.job-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  position: relative;
+}
+
+.apply-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button.applied {
+  background-color: #28a745;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+

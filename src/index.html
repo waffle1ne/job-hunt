@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Hunt</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="filter-section">
+        <h2>Фильтры</h2>
+        <div class="filter">
+          <label for="keywords">Ключевые слова:</label>
+          <input type="text" id="keywords" placeholder="Введите ключевые слова">
+        </div>
+  
+        <div class="filter">
+          <label for="region">Регион:</label>
+          <select id="region">
+            <option value="all">Все регионы</option>
+            <option value="USA">США</option>
+            <option value="Russia">Россия</option>
+            <option value="Germany">Германия</option>
+            <!-- Добавь другие регионы -->
+          </select>
+        </div>
+  
+        <div class="filter">
+          <label for="salary">Уровень дохода:</label>
+          <input type="number" id="salary" placeholder="Минимальная зарплата">
+        </div>
+  
+        <div class="filter">
+          <label for="education">Образование:</label>
+          <select id="education">
+            <option value="all">Не требуется или не указано</option>
+            <option value="secondary">Среднее профессиональное</option>
+            <option value="higher">Высшее</option>
+          </select>
+        </div>
+  
+        <div class="filter">
+          <label for="experience">Требуемый опыт работы:</label>
+          <select id="experience">
+            <option value="all">Не имеет значения</option>
+            <option value="no-experience">Нет опыта</option>
+            <option value="1-3">От 1 года до 3 лет</option>
+            <option value="3-6">От 3 до 6 лет</option>
+            <option value="6+">Более 6 лет</option>
+          </select>
+        </div>
+  
+        <div class="filter">
+          <label for="employment-type">Тип занятости:</label>
+          <select id="employment-type">
+            <option value="all">Все</option>
+            <option value="full-time">Полная занятость</option>
+            <option value="part-time">Частичная занятость</option>
+            <option value="contract">Проектная работа/разовое задание</option>
+            <option value="volunteer">Волонтерство</option>
+            <option value="internship">Стажировка</option>
+            <option value="gph">Оформление по ГПХ</option>
+          </select>
+        </div>
+  
+        <div class="filter">
+          <label for="work-mode">Рабочий режим:</label>
+          <select id="work-mode">
+            <option value="all">Все</option>
+            <option value="office">Офис</option>
+            <option value="hybrid">Гибрид</option>
+            <option value="remote">Полная удаленка</option>
+          </select>
+        </div>
+      </aside>
+
+      <main class="job-list-section">
+        <h2>Вакансии</h2>
+        <br/>
+        <ul id="job-list" class="job-list">
+          <!-- Вакансии будут загружаться сюда -->
+        </ul>
+        <div id="loading" style="display:none;">Загрузка вакансий...</div>
+      </main>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
